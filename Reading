@@ -1,0 +1,84 @@
+{
+  "name": "Reading",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Titolo"
+    },
+    "deck_id": {
+      "type": "string",
+      "title": "ID Mazzo"
+    },
+    "deck_name": {
+      "type": "string",
+      "title": "Nome Mazzo"
+    },
+    "reading_type_id": {
+      "type": "string",
+      "title": "ID Tipo Lettura"
+    },
+    "reading_type_name": {
+      "type": "string",
+      "title": "Nome Tipo Lettura"
+    },
+    "question": {
+      "type": "string",
+      "title": "Domanda"
+    },
+    "cards": {
+      "type": "array",
+      "title": "Carte Selezionate",
+      "items": {
+        "type": "object",
+        "properties": {
+          "card_id": {
+            "type": "string"
+          },
+          "card_name": {
+            "type": "string"
+          },
+          "card_image": {
+            "type": "string"
+          },
+          "position_label": {
+            "type": "string"
+          },
+          "position_description": {
+            "type": "string"
+          },
+          "is_reversed": {
+            "type": "boolean"
+          },
+          "upright_meaning": {
+            "type": "string"
+          },
+          "reversed_meaning": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "interpretation": {
+      "type": "string",
+      "title": "Interpretazione AI"
+    },
+    "personal_notes": {
+      "type": "string",
+      "title": "Note Personali"
+    },
+    "share_id": {
+      "type": "string",
+      "title": "ID Condivisione"
+    },
+    "is_shared": {
+      "type": "boolean",
+      "title": "Condiviso",
+      "default": false
+    }
+  },
+  "required": [
+    "deck_id",
+    "reading_type_id"
+  ]
+}
