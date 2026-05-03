@@ -1,0 +1,49 @@
+{
+  "name": "ReadingType",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Nome della Lettura"
+    },
+    "description": {
+      "type": "string",
+      "title": "Descrizione"
+    },
+    "num_cards": {
+      "type": "number",
+      "title": "Numero di Carte"
+    },
+    "positions": {
+      "type": "array",
+      "title": "Posizioni",
+      "items": {
+        "type": "object",
+        "properties": {
+          "index": {
+            "type": "number"
+          },
+          "label": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "icon": {
+      "type": "string",
+      "title": "Icona"
+    },
+    "is_active": {
+      "type": "boolean",
+      "title": "Attivo",
+      "default": true
+    }
+  },
+  "required": [
+    "name",
+    "num_cards"
+  ]
+}
