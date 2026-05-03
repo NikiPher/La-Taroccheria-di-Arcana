@@ -1,0 +1,32 @@
+{
+  "name": "TarotDeck",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Nome del Mazzo"
+    },
+    "description": {
+      "type": "string",
+      "title": "Descrizione"
+    },
+    "cover_image": {
+      "type": "string",
+      "title": "Immagine di Copertina",
+      "file_url": true
+    },
+    "card_back_image": {
+      "type": "string",
+      "title": "Immagine Dorso Carta",
+      "file_url": true
+    },
+    "is_active": {
+      "type": "boolean",
+      "title": "Attivo",
+      "default": true
+    }
+  },
+  "required": [
+    "name"
+  ]
+}
