@@ -1,0 +1,41 @@
+{
+  "name": "News",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Titolo"
+    },
+    "title_en": {
+      "type": "string",
+      "title": "Title (EN)"
+    },
+    "content": {
+      "type": "string",
+      "title": "Contenuto"
+    },
+    "content_en": {
+      "type": "string",
+      "title": "Content (EN)"
+    },
+    "image": {
+      "type": "string",
+      "title": "Immagine",
+      "file_url": true
+    },
+    "is_published": {
+      "type": "boolean",
+      "title": "Pubblicato",
+      "default": true
+    },
+    "pinned": {
+      "type": "boolean",
+      "title": "In evidenza",
+      "default": false
+    }
+  },
+  "required": [
+    "title",
+    "content"
+  ]
+}
