@@ -1,0 +1,49 @@
+{
+  "name": "TarotCard",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Nome della Carta"
+    },
+    "deck_id": {
+      "type": "string",
+      "title": "ID Mazzo"
+    },
+    "arcana_type": {
+      "type": "string",
+      "title": "Tipo di Arcano",
+      "enum": [
+        "major",
+        "minor"
+      ]
+    },
+    "suit": {
+      "type": "string",
+      "title": "Seme",
+      "enum": [
+        "wands",
+        "cups",
+        "swords",
+        "pentacles",
+        "none"
+      ]
+    },
+    "number": {
+      "type": "number",
+      "title": "Numero"
+    },
+    "image": {
+      "type": "string",
+      "title": "Immagine",
+      "file_url": true
+    },
+    "upright_meaning": {
+      "type": "string",
+      "title": "Significato Dritto"
+    },
+    "reversed_meaning": {
+      "type": "string",
+      "title": "Significato Rovescio"
+    },
+ 
