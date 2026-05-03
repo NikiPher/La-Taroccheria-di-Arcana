@@ -1,7 +1,11 @@
 {
-  "name": "base44-app",
-  "private": true,
-  "version": "0.0.0",
+  "name": "la-taroccheria-di-arcana",
+  "private": false,        // ← Cambia da true
+  "version": "1.0.0",      // ← Cambia da 0.0.0
+  "description": "Un'applicazione web interattiva per esplorare il mondo dei Tarocchi",
+  "author": "NikiPher",
+  "license": "MIT",
+  "keywords": ["tarot", "tarocchi", "divination", "react", "web-app"]
   "type": "module",
   "scripts": {
     "dev": "vite",
